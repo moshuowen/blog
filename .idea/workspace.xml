@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="882984a5-d7c1-4b52-9c88-197085e69dc3" name="Default Changelist" comment="" />
+    <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-25.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-26.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-27.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TypeResponsitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/TypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/dao/TypeResponsitory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/web/TypeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bface83e-cb84-4547-b3de-c95fed6bdbde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bface83e-cb84-4547-b3de-c95fed6bdbde.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/intercepter/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/intercepter/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +43,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MYSQL-blogs@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -31,6 +61,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -47,12 +80,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZNThhlxLDikI08XSjjlIPIqZXD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="JPA.DatabaseSchemaImportDialog" value="415a7e6d-2c69-4c34-a3dd-ad96d969f348" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -66,7 +103,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
@@ -132,7 +169,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="882984a5-d7c1-4b52-9c88-197085e69dc3" name="Default Changelist" comment="" />
+      <changelist id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="" />
       <created>1584678672316</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -151,11 +188,39 @@
       <workItem from="1585028715665" duration="36000" />
       <workItem from="1585096562643" duration="6933000" />
       <workItem from="1585123332311" duration="9216000" />
+      <workItem from="1585135086702" duration="1082000" />
+      <workItem from="1585187823766" duration="1711000" />
+      <workItem from="1585368491397" duration="98000" />
+      <workItem from="1585345317449" duration="101000" />
+      <workItem from="1585346094588" duration="1261000" />
+      <workItem from="1585376708261" duration="6327000" />
+      <workItem from="1585386856209" duration="399000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                </TextFilterSettings>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="4" key="#Assign_Data_Sources" timestamp="1585124406751">
@@ -166,70 +231,98 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="1" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1585124344056" />
-    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585124649850">
+    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585384465456">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585124649850" />
-    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585131898261">
+    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585384465456" />
+    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585380693993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585131898261" />
+    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585380693993" />
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1584771693562">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1280.680@0.0.1280.680" timestamp="1584771693562" />
-    <state x="93" y="93" width="1093" height="493" key="DiffContextDialog" timestamp="1584689169476">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1585389024359">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1093" height="493" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1584689169476" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585389024359" />
+    <state x="93" y="93" width="1093" height="493" key="DiffContextDialog" timestamp="1585136993640">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1093" height="493" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1585136993640" />
     <state x="412" y="143" key="FileChooserDialogImpl" timestamp="1584689926760">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="143" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584689926760" />
-    <state width="1238" height="367" key="GridCell.Tab.0.bottom" timestamp="1585133642600">
+    <state width="1238" height="150" key="GridCell.Tab.0.bottom" timestamp="1585385391138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585133642600" />
-    <state width="1238" height="367" key="GridCell.Tab.0.center" timestamp="1585133642600">
+    <state width="1238" height="150" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
+    <state width="1238" height="150" key="GridCell.Tab.0.center" timestamp="1585385391138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585133642600" />
-    <state width="1238" height="367" key="GridCell.Tab.0.left" timestamp="1585133642599">
+    <state width="1238" height="150" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
+    <state width="1238" height="150" key="GridCell.Tab.0.left" timestamp="1585385391138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585133642599" />
-    <state width="1238" height="367" key="GridCell.Tab.0.right" timestamp="1585133642600">
+    <state width="1238" height="150" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
+    <state width="1238" height="150" key="GridCell.Tab.0.right" timestamp="1585385391138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585133642600" />
-    <state width="1238" height="367" key="GridCell.Tab.1.bottom" timestamp="1585133642596">
+    <state width="1238" height="150" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
+    <state width="1238" height="150" key="GridCell.Tab.1.bottom" timestamp="1585385391139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585133642596" />
-    <state width="1238" height="367" key="GridCell.Tab.1.center" timestamp="1585133642596">
+    <state width="1238" height="150" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
+    <state width="1238" height="150" key="GridCell.Tab.1.center" timestamp="1585385391139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585133642596" />
-    <state width="1238" height="367" key="GridCell.Tab.1.left" timestamp="1585133642596">
+    <state width="1238" height="150" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
+    <state width="1238" height="150" key="GridCell.Tab.1.left" timestamp="1585385391139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585133642596" />
-    <state width="1238" height="367" key="GridCell.Tab.1.right" timestamp="1585133642596">
+    <state width="1238" height="150" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
+    <state width="1238" height="150" key="GridCell.Tab.1.right" timestamp="1585385391139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="367" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585133642596" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1585123018280">
+    <state width="1238" height="150" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1585135822171">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585123018280" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585135822171" />
+    <state x="311" y="48" key="VCS.ChangeListViewerDialog" timestamp="1585137325226">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="311" y="48" key="VCS.ChangeListViewerDialog/0.0.1280.680@0.0.1280.680" timestamp="1585137325226" />
+    <state x="487" y="261" key="VCS.ChangelistChooser" timestamp="1585137099726">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="487" y="261" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1585137099726" />
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1585389003526">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585389003526" />
+    <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585389030700">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1585389030700" />
+    <state x="369" y="142" key="git4idea.merge.GitPullDialog" timestamp="1585136929717">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="369" y="142" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1585136929717" />
+    <state x="439" y="246" key="git4idea.ui.GitResetDialog" timestamp="1585137326356">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="439" y="246" key="git4idea.ui.GitResetDialog/0.0.1280.680@0.0.1280.680" timestamp="1585137326356" />
     <state x="6" y="47" key="new project wizard" timestamp="1585123508495">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="6" y="47" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1585123508495" />
-    <state x="300" y="153" key="run.anything.popup" timestamp="1584691039201">
+    <state x="301" y="154" key="run.anything.popup" timestamp="1585346176338">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="300" y="153" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1584691039201" />
+    <state x="301" y="154" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1585346176338" />
     <state x="307" y="6" width="672" height="678" key="search.everywhere.popup" timestamp="1585131614484">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

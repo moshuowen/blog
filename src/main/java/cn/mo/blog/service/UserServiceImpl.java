@@ -15,9 +15,11 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User checkUser(String username, String password) {
-        User user = userRespository.findByUsernameAndPassword(username, MD5Utils.code(password));
+        User user = userRespository.findByUsernameAndPassword(username,
+                MD5Utils.code(password));
         return user;
     }
 }
 //实现接口，查询数据库，查到就返回user
 //操作数据库---->dao
+//实现了md5加密

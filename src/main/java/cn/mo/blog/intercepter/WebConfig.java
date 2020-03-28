@@ -17,3 +17,4 @@ public class WebConfig implements WebMvcConfigurer {
 
     }
 }
+//拦截器拦截在没有输入密码时访问/admin后面的地址
