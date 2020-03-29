@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-25.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-26.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-27.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TypeResponsitory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/TypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/dao/TypeResponsitory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/web/TypeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bface83e-cb84-4547-b3de-c95fed6bdbde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bface83e-cb84-4547-b3de-c95fed6bdbde.xml" afterDir="false" />
+    <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="types and login">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-28.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TagResponsitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/TagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/TypeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/intercepter/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/intercepter/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TypeResponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TypeResponsitory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/TypeController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/dao/TypeResponsitory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/dao/TypeResponsitory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/po/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/po/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/web/TypeController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cn.mo.blog.BlogApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cn.mo.blog.BlogApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/cn.mo.blog.BlogApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/cn.mo.blog.BlogApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +104,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/admin" />
@@ -106,6 +114,11 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.mo.blog.web.admin" />
+      <recent name="cn.mo.blog.service" />
+      <recent name="cn.mo.blog.dao" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
@@ -195,7 +208,17 @@
       <workItem from="1585346094588" duration="1261000" />
       <workItem from="1585376708261" duration="6327000" />
       <workItem from="1585386856209" duration="399000" />
+      <workItem from="1585388858213" duration="4987000" />
+      <workItem from="1585451574586" duration="9094000" />
     </task>
+    <task id="LOCAL-00001" summary="types and login">
+      <created>1585389069590</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585389069590</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +244,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="types and login" />
+    <option name="LAST_COMMIT_MESSAGE" value="types and login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="4" key="#Assign_Data_Sources" timestamp="1585124406751">
@@ -231,22 +256,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="1" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1585124344056" />
-    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585384465456">
+    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585452518091">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585384465456" />
-    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585380693993">
+    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585452518091" />
+    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585393346808">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585380693993" />
+    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585393346808" />
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1584771693562">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1280.680@0.0.1280.680" timestamp="1584771693562" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1585389024359">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1585390647119">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585389024359" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585390647119" />
     <state x="93" y="93" width="1093" height="493" key="DiffContextDialog" timestamp="1585136993640">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -255,42 +280,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="143" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584689926760" />
-    <state width="1238" height="150" key="GridCell.Tab.0.bottom" timestamp="1585385391138">
+    <state width="1238" height="419" key="GridCell.Tab.0.bottom" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
-    <state width="1238" height="150" key="GridCell.Tab.0.center" timestamp="1585385391138">
+    <state width="1238" height="419" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.0.center" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
-    <state width="1238" height="150" key="GridCell.Tab.0.left" timestamp="1585385391138">
+    <state width="1238" height="419" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.0.left" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
-    <state width="1238" height="150" key="GridCell.Tab.0.right" timestamp="1585385391138">
+    <state width="1238" height="419" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.0.right" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585385391138" />
-    <state width="1238" height="150" key="GridCell.Tab.1.bottom" timestamp="1585385391139">
+    <state width="1238" height="419" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.1.bottom" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
-    <state width="1238" height="150" key="GridCell.Tab.1.center" timestamp="1585385391139">
+    <state width="1238" height="419" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.1.center" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
-    <state width="1238" height="150" key="GridCell.Tab.1.left" timestamp="1585385391139">
+    <state width="1238" height="419" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.1.left" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
-    <state width="1238" height="150" key="GridCell.Tab.1.right" timestamp="1585385391139">
+    <state width="1238" height="419" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state width="1238" height="419" key="GridCell.Tab.1.right" timestamp="1585461885232">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="150" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585385391139" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1585135822171">
+    <state width="1238" height="419" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1585389355488">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585135822171" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585389355488" />
+    <state width="530" height="446" key="SwitcherDM" timestamp="1585460301069">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="530" height="446" key="SwitcherDM/0.0.1280.680@0.0.1280.680" timestamp="1585460301069" />
     <state x="311" y="48" key="VCS.ChangeListViewerDialog" timestamp="1585137325226">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -299,10 +328,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="487" y="261" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1585137099726" />
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1585389003526">
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1585462016656">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585389003526" />
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585462016656" />
     <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585389030700">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -323,9 +352,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="301" y="154" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1585346176338" />
-    <state x="307" y="6" width="672" height="678" key="search.everywhere.popup" timestamp="1585131614484">
+    <state x="308" y="7" width="672" height="678" key="search.everywhere.popup" timestamp="1585458069883">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="307" y="6" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1585131614484" />
+    <state x="308" y="7" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1585458069883" />
   </component>
 </project>

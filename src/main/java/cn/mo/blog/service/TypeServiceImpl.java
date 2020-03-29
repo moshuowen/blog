@@ -10,6 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class TypeServiceImpl implements TypeService {
@@ -17,6 +18,11 @@ public class TypeServiceImpl implements TypeService {
     @Autowired
     private TypeResponsitory typeResponsitory;
 
+    @Override
+    public Type getTypeByName(String name) {
+        return typeResponsitory.findByName(name);
+//        重复名的验证
+    }
 
     //放在事务中
     @Transactional
@@ -33,7 +39,7 @@ public class TypeServiceImpl implements TypeService {
 
     @Transactional
     @Override
-    public Page<Type> listtype(Pageable pageable) {
+    public Page<Type> listType(Pageable pageable) {
         return typeResponsitory.findAll(pageable);
     }
 
@@ -53,4 +59,7 @@ public class TypeServiceImpl implements TypeService {
     public void deleteType(Long id) {
         typeResponsitory.deleteById(id);
     }
+
+
 }
+//        根据名字查找type

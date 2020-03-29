@@ -37,8 +37,8 @@
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" class="item">发布</a>
-                <a href="#" class="active teal item">列表</a>
+                <a href="#" th:href="@{/admin/types/input}" class="item">新增</a>
+                <a href="#" th:href="@{/admin/types}" class="active teal item">列表</a>
             </div>
         </div>
 
@@ -49,12 +49,17 @@
 <!--中间内容-->
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
-
-
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}">恭喜，操作成功！</p>
+            </div>
+<!--这里的message 传递是后端的对标签页输入值 的校验，非空-->
+<!--消息提示组件，失败还是成功-->
             <table class="ui celled table">
                 <thead>
                     <tr >
-<!--                        循环提取type数据-->
+<!--循环提取type数据-->
                         <th></th>
                         <th>名称</th>
                         <th>操作</th>
@@ -78,6 +83,8 @@
                                 <a th:href = "@{/admin/types(page=${page.number}-1)}" class="item" th:unless="${page.first}">上一页</a>
                                 <a th:href = "@{/admin/types(page=${page.number}+1)}" class="item" th:unless="${page.last}">下一页</a>
                             </div>
+                        <!--th:unless="${page.first}" 除非不是第一页就显示，在没有换页不会显示换页按钮-->
+                        <!--th:if="${page.totalPages}>1 页数大于1 时才会显示换页按钮，不符合就不会渲染整个menu-->
                             <a href="#" th:href = "@{/admin/types/input}" class="ui right floated mini teal  button">新增</a>
 
                         </th>
@@ -111,9 +118,7 @@
                     <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
                     <div class="ui inverted link list">
 <!--                        最新的博客列表-->
-                            <a href="#" class="item">用户故事(user story)</a>
-                            <a href="#" class="item">用户故事(user story)</a>
-                            <a href="#" class="item">用户故事(user story)</a>
+                            <a href="#" class="item">假装这里有博客</a>
                     </div>
                 </div>
 
@@ -168,7 +173,17 @@
         // on: 'hover'
         // 下拉三角放上去就会弹出注销
     })
+
+    //消息提示关闭初始化，message具备可关闭功能
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
 </script>
 
 </body>
 </html>
+
+

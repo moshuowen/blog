@@ -2,6 +2,7 @@ package cn.mo.blog.po;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,10 @@ public class Type {
     @Id
     @GeneratedValue
     private  Long id;
+
+    @NotBlank(message = "TypeNotBlank：分类名称不能为空")
     private String name;
+//后端校验type,然偷懒了，这里还可以有业务校验
 
     @OneToMany(mappedBy = "type")
     private List<Blog> blogs = new ArrayList<>();

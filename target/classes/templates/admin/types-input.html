@@ -39,8 +39,8 @@
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" class="active teal item">发布</a>
-                <a href="#" class="item">列表</a>
+                <a href="#" th:href="@{/admin/types/input}" class="active teal item">新增</a>
+                <a href="#" th:href="@{/admin/types}" class="item">列表</a>
             </div>
         </div>
 
@@ -51,18 +51,32 @@
 <!--中间内容-->
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
-            <form action="#"  method="post" th:action="@{/admin/types}" class="ui form">
+            <form action="#"  method="post"  th:object="${type}" th:action="*{id}== null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
+<!--                选择他调用是编辑前还是编辑后-->
+                <input type="hidden" name="id" th:value="*{id}">
 
-                <div class="field">
+                <div class="required field">
+<!--                    不通过则将页面标红-->
                     <div class="ui left labeled input">
                         <label  class="ui basic teal label">名称</label>
-                        <input type="text" name="name" placeholder="分类名称">
+                        <input type="text" name="name" placeholder="分类名称" th:value="*{name}">
                     </div>
                 </div>
 
+<!--th:value="*{name}" 拿到name的信息-->
 
+<!-- 自定义的标题检查在这里显示-->
                 <div class="ui error message"></div>
-<!--               自定义的标题检查在这里显示-->
+                <!--/*/
+                <div class="ui negative message" th:if="${#fields.hasErrors('name')}"  >
+                  <i class="close icon"></i>
+                  <div class="header">验证失败</div>
+                  <p th:errors="*{name}">提交信息不符合规则</p>
+                </div>
+                 /*/-->
+
+
+<!--校验的数据域是否有错：name，有错的话拿到Type的message-->
                 <div class="ui right aligned container">
                     <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
                     <button class="ui teal submit button">提交</button>
@@ -173,15 +187,23 @@
     $('.ui.form').form({
         fields :{
             title :{
-               identifier : 'title',
+               identifier : 'name111',
                 rules :[{
                    type:'empty',
-                    prompt :'标题 : 请输入博客标题'
+                    prompt :'请输入分类名称'
+                    // 表单校验，消息不通过标红，前端校验
                 }]
             }
         }
+    });
 
-    })
+    //消息提示关闭初始化，message具备可关闭功能
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
 </script>
 
 </body>
