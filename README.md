@@ -1,6 +1,6 @@
 # blog
-毕业设计的仓库，个人博客网站
-- springboot 
+##个人博客网站
+- springboot 2.2.5
 - semanticUI
 - thymeleaf
 - JPA
