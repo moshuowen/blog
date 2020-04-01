@@ -43,6 +43,11 @@ public class TypeServiceImpl implements TypeService {
         return typeResponsitory.findAll(pageable);
     }
 
+    @Override
+    public List<Type> listType() {
+        return typeResponsitory.findAll();
+    }
+
     @Transactional
     @Override
     public Type updateType(Long id, Type type) {

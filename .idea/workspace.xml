@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="types and login">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-28.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TagResponsitory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/TagController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/TypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags-input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tags.html" afterDir="false" />
+    <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-03-29.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-04-01.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/BlogResponsitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/vo/blogQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TypeResponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/TypeResponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/po/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TagServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/TypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/TypeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/BlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/dao/TypeResponsitory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/dao/TypeResponsitory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/po/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/po/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TagService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TagService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TagServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TagServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/service/TypeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/web/TypeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/mo/blog/web/admin/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/mo/blog/web/admin/BlogController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/types-input.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/types.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cn.mo.blog.BlogApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-cn.mo.blog.BlogApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/cn.mo.blog.BlogApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/cn.mo.blog.BlogApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs-input.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-cn.mo.blog.BlogApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/cn.mo.blog.BlogApplicationTests.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,17 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="MYSQL-blogs@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MYSQL-blogs@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MYSQL-blogs@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="blogs: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -209,7 +226,12 @@
       <workItem from="1585376708261" duration="6327000" />
       <workItem from="1585386856209" duration="399000" />
       <workItem from="1585388858213" duration="4987000" />
-      <workItem from="1585451574586" duration="9094000" />
+      <workItem from="1585451574586" duration="18991000" />
+      <workItem from="1585541732887" duration="1795000" />
+      <workItem from="1585562919083" duration="65000" />
+      <workItem from="1585564145074" duration="389000" />
+      <workItem from="1585571859154" duration="545000" />
+      <workItem from="1585750483228" duration="9081000" />
     </task>
     <task id="LOCAL-00001" summary="types and login">
       <created>1585389069590</created>
@@ -218,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585389069590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tags and types">
+      <created>1585462041612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585462041612</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +274,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="types and login" />
-    <option name="LAST_COMMIT_MESSAGE" value="types and login" />
+    <MESSAGE value="tags and types" />
+    <option name="LAST_COMMIT_MESSAGE" value="tags and types" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="4" key="#Assign_Data_Sources" timestamp="1585124406751">
@@ -256,22 +286,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="1" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1585124344056" />
-    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585452518091">
+    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585751397995">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585452518091" />
-    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585393346808">
+    <state x="233" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585751397995" />
+    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1585758656383">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585393346808" />
+    <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585758656383" />
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1584771693562">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="312" y="0" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1280.680@0.0.1280.680" timestamp="1584771693562" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1585390647119">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1585462039034">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585390647119" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585462039034" />
     <state x="93" y="93" width="1093" height="493" key="DiffContextDialog" timestamp="1585136993640">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -280,42 +310,58 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="143" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584689926760" />
-    <state width="1238" height="419" key="GridCell.Tab.0.bottom" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.0.bottom" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.0.center" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="396" key="GridCell.Tab.0.center" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.0.left" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="396" key="GridCell.Tab.0.left" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.0.right" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="396" key="GridCell.Tab.0.right" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.1.bottom" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="396" key="GridCell.Tab.1.bottom" timestamp="1585759291766">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.1.center" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585759291766" />
+    <state width="1238" height="396" key="GridCell.Tab.1.center" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.1.left" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="396" key="GridCell.Tab.1.left" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state width="1238" height="419" key="GridCell.Tab.1.right" timestamp="1585461885232">
+    <state width="1238" height="396" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="396" key="GridCell.Tab.1.right" timestamp="1585759291765">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="419" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585461885232" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1585389355488">
+    <state width="1238" height="396" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585759291765" />
+    <state width="1238" height="204" key="GridCell.Tab.2.bottom" timestamp="1585756236645">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585389355488" />
+    <state width="1238" height="204" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585756236645" />
+    <state width="1238" height="204" key="GridCell.Tab.2.center" timestamp="1585756236644">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1585756236644" />
+    <state width="1238" height="204" key="GridCell.Tab.2.left" timestamp="1585756236644">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1585756236644" />
+    <state width="1238" height="204" key="GridCell.Tab.2.right" timestamp="1585756236644">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="204" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1585756236644" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1585487061186">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585487061186" />
     <state width="530" height="446" key="SwitcherDM" timestamp="1585460301069">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -328,14 +374,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="487" y="261" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1585137099726" />
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1585462016656">
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1585487083859">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585462016656" />
-    <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585389030700">
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585487083859" />
+    <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585484312574">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1585389030700" />
+    <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1585484312574" />
     <state x="369" y="142" key="git4idea.merge.GitPullDialog" timestamp="1585136929717">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -348,13 +394,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="6" y="47" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1585123508495" />
-    <state x="301" y="154" key="run.anything.popup" timestamp="1585346176338">
+    <state x="302" y="155" key="run.anything.popup" timestamp="1585759023946">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="301" y="154" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1585346176338" />
-    <state x="308" y="7" width="672" height="678" key="search.everywhere.popup" timestamp="1585458069883">
+    <state x="302" y="155" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1585759023946" />
+    <state x="309" y="8" width="672" height="678" key="search.everywhere.popup" timestamp="1585758936083">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="308" y="7" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1585458069883" />
+    <state x="309" y="8" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1585758936083" />
   </component>
 </project>

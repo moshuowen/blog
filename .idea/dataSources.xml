@@ -4,7 +4,13 @@
     <data-source source="LOCAL" name="MYSQL-blogs@localhost" uuid="bface83e-cb84-4547-b3de-c95fed6bdbde">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/blogs</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="MYSQL-blogs@localhost [2]" uuid="55234c5a-2e8b-42b0-9c8a-8396aa39682e">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/blogs</jdbc-url>
     </data-source>
   </component>

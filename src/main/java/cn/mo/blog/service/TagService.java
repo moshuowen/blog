@@ -4,6 +4,8 @@ import cn.mo.blog.po.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface TagService {
     Tag saveTag(Tag type);
 
@@ -11,6 +13,8 @@ public interface TagService {
 
     Tag getTagByName(String name);
 //    通过名称查询type
+
+    List<Tag> listTag();
 
     Page<Tag> listTag(Pageable pageable);
 
