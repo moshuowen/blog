@@ -93,6 +93,7 @@
                     <th>标题</th>
                     <th>类型</th>
                     <th>推荐</th>
+                    <th>状态</th>
                     <th>更新时间</th>
                     <th>操作</th>
                 </tr>
@@ -103,6 +104,8 @@
                     <td th:text="${blog.title}">马拉松310</td>
                     <td th:text="${blog.type.name}">运动训练</td>
                     <td th:text="${blog.recommend} ? '是':'否' ">是</td>
+                    <td th:text="${blog.pulished} ? '发布':'草稿' ">草稿</td>
+                    <!--数据库中是定义错了，published应该，-->
                     <td th:text="${blog.updateTime}">2019-11-11</td>
                     <td>
                         <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}"
@@ -115,7 +118,7 @@
 
                 <tfoot>
                 <tr>
-                    <th colspan="6">
+                    <th colspan="7">
                         <div class="ui pagination mini menu" th:if="${page.totalPages}>1">
                             <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item"
                                th:unless="${page.first}">上一页</a>
@@ -123,14 +126,21 @@
                                th:unless="${page.last}">下一页</a>
                         </div>
                         <a href="#" th:href="@{/admin/blogs/input}" class="ui right floated mini teal  button">新增</a>
-
                     </th>
-
                 </tr>
-
                 </tfoot>
             </table>
+
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}">恭喜，操作成功！</p>
+            </div>
+            <!--这里的message 传递是后端的对标签页输入值 的校验，非空-->
+            <!--消息提示组件，失败还是成功-->
         </div>
+
+
     </div>
 
 </div>
@@ -220,7 +230,7 @@
         loaddata();
     };
 
-    $("search-btn").click(function () {
+    $("#search-btn").click(function () {
         $("[name='page']").val(0);
         loaddata();
     });
@@ -232,7 +242,16 @@
             recommend: $("[name='recommend']").prop('checked'),
             page: $("[name='page']").val()
         });//动态获取表格的内容
-    }
+    };
+
+    //消息提示关闭初始化，message具备可关闭功能
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
+
 </script>
 
 </body>
