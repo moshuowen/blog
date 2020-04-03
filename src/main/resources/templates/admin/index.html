@@ -37,8 +37,8 @@
     <div class="ui attached pointing menu">
         <div class="ui container">
             <div class="right menu">
-                <a href="#" class="item">发布</a>
-                <a href="#" class="active teal item">列表</a>
+                <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
+                <a href="#" th:href="@{/admin/blogs}" class="item">列表</a>
             </div>
         </div>
 
@@ -50,11 +50,11 @@
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
             <div class="ui success large  message">
-                <h3>Hi,莫硕文</h3>
+                <h3>Hi <span th:text="${session.user.nickname}" >莫硕文</span> </h3>
                 <h2>欢迎登录</h2>
             </div>
         </div>
-        <img src="https://unsplash.it/800/600?image=1002" alt="" class="ui rouded bordered fluid image">
+<!--        <img src="https://unsplash.it/800/600?image=1002"  alt="" class="ui rouded bordered fluid image">-->
     </div>
 
 <br>

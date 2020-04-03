@@ -40,7 +40,7 @@ public class BlogController {
     private TagService tagService;
 
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 2,sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         blogQuery blog, Model model){
         model.addAttribute("types",typeService.listType());
         model.addAttribute("page",blogService.listBlog(pageable,blog));
@@ -48,7 +48,7 @@ public class BlogController {
     }
 
     @PostMapping("/blogs/search")
-    public String search(@PageableDefault(size = 2,sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String search(@PageableDefault(size = 6,sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          blogQuery blog, Model model){
 //          model.addAttribute("type",typeService.listType());
         model.addAttribute("page",blogService.listBlog(pageable,blog));
