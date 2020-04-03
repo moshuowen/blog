@@ -44,8 +44,6 @@
 
     </div>
 
-
-
 <!--中间内容-->
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
@@ -73,6 +71,7 @@
                             <a href="#" th:href = "@{/admin/types/{id}/input(id=${type.id})}" class="ui blue basic mini button">编辑</a>
                             <a href="#" th:href = "@{/admin/types/{id}/delete(id=${type.id})}"class="ui red basic mini button">删除</a>
                         </td>
+                            <!--注：type和tag在已经有文章使用的情况下是删除不掉的，这里没有做处理-->
                     </tr>
                 </tbody>
 
@@ -86,15 +85,11 @@
                         <!--th:unless="${page.first}" 除非不是第一页就显示，在没有换页不会显示换页按钮-->
                         <!--th:if="${page.totalPages}>1 页数大于1 时才会显示换页按钮，不符合就不会渲染整个menu-->
                             <a href="#" th:href = "@{/admin/types/input}" class="ui right floated mini teal  button">新增</a>
-
                         </th>
-
                     </tr>
-
                 </tfoot>
             </table>
         </div>
-
     </div>
 
 <br>

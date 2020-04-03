@@ -4,6 +4,7 @@ import cn.mo.blog.NotFoundException;
 import cn.mo.blog.dao.BlogResponsitory;
 import cn.mo.blog.po.Blog;
 import cn.mo.blog.po.Type;
+import cn.mo.blog.util.MyBeanUtils;
 import cn.mo.blog.vo.blogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.Transient;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
@@ -61,11 +61,12 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Page<Blog> listBlog(Pageable pageable) {
         return blogResponsitory.findAll(pageable);
-    }
+    }//主页分页的数据
 
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
+        //如果是第一次的（null）的话就设置，否则就去updatetime
         if(blog.getId() == null){
             blog.setCreateTime(new Date());
             blog.setUpdateTime(new Date());
@@ -83,8 +84,9 @@ public class BlogServiceImpl implements BlogService {
         if(b == null){
             throw new NotFoundException("该博客不存在");
         }
-        BeanUtils.copyProperties(blog,b);
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
 //        进行对象之间属性的赋值
+        b.setUpdateTime(new Date());
         return blogResponsitory.save(b);
     }
 

@@ -49,7 +49,7 @@ public class Blog {
     @Transient
     private String tagIds;//不会入库，正常属性
 
-    private String description;
+    private String description;//博文描述
 
     public Blog() {
     }
@@ -207,12 +207,11 @@ public class Blog {
     }
 
     public void init(){
-//        初始化tagIds
+        //初始化tagIds
         this.tagIds = tagsToIds(this.getTags());
-
     }
 
-    //如果有值得话，获取的数值是1,2,3
+    //如果有值得话，最后获取的数值是1,2,3
     private String tagsToIds(List<Tag> tags) {
         if (!tags.isEmpty()) {
             StringBuffer ids = new StringBuffer();

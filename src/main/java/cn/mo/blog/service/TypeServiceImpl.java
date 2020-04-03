@@ -6,10 +6,12 @@ import cn.mo.blog.po.Type;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
@@ -48,6 +50,15 @@ public class TypeServiceImpl implements TypeService {
         return typeResponsitory.findAll();
     }
 
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+        Sort sort = Sort.by(Sort.Direction.DESC,"blog.size");
+//        排序倒序，按照size排序
+//        在spring2.2.1以上使用Sort.by获取Sort对象,PageRequest.of获取PageRequest对象
+        Pageable pageable =  PageRequest.of(0,size,sort);
+        return typeResponsitory.findTop(pageable);
+    }
+
     @Transactional
     @Override
     public Type updateType(Long id, Type type) {
@@ -65,6 +76,4 @@ public class TypeServiceImpl implements TypeService {
         typeResponsitory.deleteById(id);
     }
 
-
 }
-//        根据名字查找type

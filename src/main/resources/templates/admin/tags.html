@@ -83,14 +83,12 @@
                                 <a th:href = "@{/admin/tags(page=${page.number}-1)}" class="item" th:unless="${page.first}">上一页</a>
                                 <a th:href = "@{/admin/tags(page=${page.number}+1)}" class="item" th:unless="${page.last}">下一页</a>
                             </div>
+                        <!--注：type和tag在已经有文章使用的情况下是删除不掉的，这里没有做处理&ndash;&gt;-->
                         <!--th:unless="${page.first}" 除非不是第一页就显示，在没有换页不会显示换页按钮-->
                         <!--th:if="${page.totalPages}>1 页数大于1 时才会显示换页按钮，不符合就不会渲染整个menu-->
                             <a href="#" th:href = "@{/admin/tags/input}" class="ui right floated mini teal  button">新增</a>
-
                         </th>
-
                     </tr>
-
                 </tfoot>
             </table>
         </div>

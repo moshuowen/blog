@@ -7,10 +7,12 @@ import cn.mo.blog.po.Tag;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,6 +51,14 @@ public class TagServiceImpl implements TagService {
 //        这里要拿到id集合，1,2,4,5
     }
 
+    @Override
+    public List<Tag> listTagTop(Integer size) {
+        Sort sort =  Sort.by(Sort.Direction.DESC,"blog.size");
+//        排序倒序，按照size排序
+//        在spring2.2.1以上使用Sort.by获取Sort对象,PageRequest.of获取PageRequest对象
+        Pageable pageable =  PageRequest.of(0,size,sort);
+        return tagRepository.finTop(pageable);
+    }
 
 
     private List<Long> convertToList(String ids) {
