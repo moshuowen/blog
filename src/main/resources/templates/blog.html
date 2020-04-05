@@ -76,7 +76,7 @@
             <h2 class="ui center aligned header" th:text="${blog.title}">关于刻意练习的清单</h2><br>
             </code></pre>
             <!--这里是主要内容部分-->
-            <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large" th:text="${blog.content}">
+            <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large" th:utext="${blog.content}">
                 <h1>中文网页重设与排版：<i class="serif">Typo.css</i></h1><br/>
                 <h2 id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</h2>
                 <pre><code class="language-css">p { color: red }</code></pre>
@@ -699,7 +699,8 @@ h5,h6{font-size:1em;}
 <script src="../static/lib/qrcode/qrcode.min.js"></script>
 <script src="../static/lib/waypot/jquery.waypoints.min.js"></script>
 <!--/*/</th:block>/*/-->
-<script>
+
+<script th:inline="javascript">
 
     $('.menu.toggle').click(function() {
         $('.m-item').toggleClass('m-mobile-hide');
@@ -738,10 +739,13 @@ h5,h6{font-size:1em;}
         position : 'bottom center'
     });
 
+
+    var serurl = "127.0.0.1:8080"
+    var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
     var qrcode = new QRCode("qrcode", {
-        text: "http://jindo.dev.naver.com/collie",
-        width: 128,
-        height: 128,
+        text: serurl+url,
+        width: 110,
+        height: 110,
         colorDark : "#000000",
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
