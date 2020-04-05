@@ -5,6 +5,8 @@ import cn.mo.blog.vo.blogQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface BlogService {
 
     Blog getBlog(Long id);//获取
@@ -12,6 +14,8 @@ public interface BlogService {
     Page<Blog> listBlog(Pageable pageable, blogQuery blog);//分页查询，查询条件封装成blog对象
 
     Page<Blog> listBlog(Pageable pageable);
+
+    List<Blog> listRecommendBlogTop(Integer size);
 
     Blog saveBlog(Blog blog);
 

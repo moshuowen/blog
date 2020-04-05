@@ -15,6 +15,6 @@ public interface TagResponsitory extends JpaRepository<Tag,Long> {
 
 //
     @Query("select t from Tag t")
-    List<Tag> finTop(Pageable pageable);
+    List<Tag> findTop(Pageable pageable);
 
 }

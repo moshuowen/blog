@@ -53,11 +53,11 @@ public class TagServiceImpl implements TagService {
 
     @Override
     public List<Tag> listTagTop(Integer size) {
-        Sort sort =  Sort.by(Sort.Direction.DESC,"blog.size");
+        Sort sort =  Sort.by(Sort.Direction.DESC,"blogs.size");
 //        排序倒序，按照size排序
 //        在spring2.2.1以上使用Sort.by获取Sort对象,PageRequest.of获取PageRequest对象
         Pageable pageable =  PageRequest.of(0,size,sort);
-        return tagRepository.finTop(pageable);
+        return tagRepository.findTop(pageable);
     }
 
 

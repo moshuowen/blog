@@ -18,11 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class indexController {
-//
-//    @GetMapping("/")
-//    public String index(){
-//        return "index";
-//    }
 
     @Autowired
     private BlogService blogService;
@@ -40,7 +35,7 @@ public class indexController {
         model.addAttribute("types", typeService.listTypeTop(6));
 //        分类的排序，这里可以写在配置文件里，灵活处理大小
         model.addAttribute("tags", tagService.listTagTop(10));
-//        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(8));
         return "index";
     }
 

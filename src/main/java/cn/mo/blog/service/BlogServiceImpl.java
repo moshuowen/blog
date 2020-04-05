@@ -9,7 +9,9 @@ import cn.mo.blog.vo.blogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -63,6 +65,15 @@ public class BlogServiceImpl implements BlogService {
         return blogResponsitory.findAll(pageable);
     }//主页分页的数据
 
+    @Override
+    public List<Blog> listRecommendBlogTop(Integer size) {
+        Sort sort = Sort.by(Sort.Direction.DESC,"updateTime");
+        Pageable pageable = PageRequest.of(0,size,sort);
+        return  blogResponsitory.findTop(pageable);
+
+    }
+
+
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
@@ -85,7 +96,7 @@ public class BlogServiceImpl implements BlogService {
             throw new NotFoundException("该博客不存在");
         }
         BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
-//        进行对象之间属性的赋值
+//        进行对象之间属性的赋值，过滤空的数据
         b.setUpdateTime(new Date());
         return blogResponsitory.save(b);
     }
@@ -94,6 +105,5 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public void deleteBlog(Long id) {
         blogResponsitory.deleteById(id);
-
     }
 }

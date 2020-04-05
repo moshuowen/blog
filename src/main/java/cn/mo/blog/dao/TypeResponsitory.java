@@ -10,10 +10,11 @@ import java.util.List;
 
 public interface TypeResponsitory  extends JpaRepository<Type,Long> {
 
+//    遵循命名规则查询
     Type findByName(String name);
-//    遵循命名规则
 
-    //按照分类去查询
+    //按照分页去查询
+//    自定义查询
     @Query("select t from Type t")
     List<Type> findTop(Pageable pageable);
 }

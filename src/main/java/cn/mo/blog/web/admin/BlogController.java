@@ -90,7 +90,6 @@ public class BlogController {
         Blog b ;
         if (blog.getId() == null){
             b =  blogService.saveBlog(blog);
-
         } else  {
             b = blogService.updateBlog(blog.getId(),blog);
         }
