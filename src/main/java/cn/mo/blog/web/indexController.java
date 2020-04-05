@@ -39,14 +39,15 @@ public class indexController {
         return "index";
     }
 
-//
-//    @PostMapping("/search")
-//    public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-//                         @RequestParam String query, Model model) {
-//        model.addAttribute("page", blogService.listBlog("%"+query+"%", pageable));
-//        model.addAttribute("query", query);
-//        return "search";
-//    }
+
+    @PostMapping("/search")
+    public String search(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                         @RequestParam String query, Model model) {
+        model.addAttribute("page", blogService.listBlog("%"+query+"%", pageable));
+//        like 查询
+        model.addAttribute("query", query);
+        return "search";
+    }
 //
 //    @GetMapping("/blog/{id}")
 //    public String blog(@PathVariable Long id,Model model) {
@@ -59,7 +60,7 @@ public class indexController {
 //        model.addAttribute("newblogs", blogService.listRecommendBlogTop(3));
 //        return "_fragments :: newblogList";
 //    }
-        @GetMapping("/blog")
+        @GetMapping("/blog/{id}")
         public String blog(){
             return "blog";
         }

@@ -22,9 +22,7 @@
                 <div class="ui icon inverted transparent input">
                     <input type="text" placeholder="search...">
                     <i class="search link icon"></i>
-
                 </div>
-
             </div>
         </div>
     </div>
@@ -40,304 +38,267 @@
     <div class="ui mobile reversed stackable grid">
         <!--stackable  为了适应移动端可堆叠演示   -->
             <!--左边的博客列表-->
-             <div class="eleven wide column ">
-                 <!--header-->
-                 <div class="ui top attached segment">
-                     <div class="ui middle aligned two column grid">
-                        <!--middle aligned图片垂直居中-->
-                         <div class="column">
-                             <h3 class="ui teal header">博客</h3>
-                         </div>
-                         <div class="right aligned column">
-                             共<h3 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}">14</h3>篇
-                         </div>
-
-                     </div>
+     <div class="eleven wide column ">
+             <!--header-->
+         <div class="ui top attached segment">
+             <div class="ui middle aligned two column grid">
+                <!--middle aligned图片垂直居中-->
+                 <div class="column">
+                     <h3 class="ui teal header">博客</h3>
                  </div>
-                 <!--content-->
-                 <div class="ui attached segment">
-                     <!--这里是文章页的内容-->
-                     <div class="ui padded vertical segment m-padded-tb-large">
-                         <div class="ui middle aligned mobile reversed stackable grid" th:each="blog : ${page.content}">
-<!--middle aligned 图片垂直居中-->
-                             <div class="eleven wide column">
-                                 <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">你真的理解什么是财富自由吗？</a> </h3>
-                                 <p class="m-text" th:text="|${blog.description}.....|">这么多年我一直在思考关于财富自由的定义，财富自由：就是有足够多的钱和时间做你想做的事情
-                                     这个定义对我来说虽然有意义，但是没有足够的行动指导意义，所以我自己琢磨出一个自己对财富自由的定义:
-                                     所谓的财富自由就是一个人在也无需为了生活必需而出售自己的时间
-                                 </p>
-                                 <div class="ui grid">
-                                     <div class="eleven wide column">
-                                         <!--文章页下面的样式-->
-                                         <div class="ui mini horizontal link list">
-                                             <div class="item">
-                                                 <img src="https://picsum.photos/100/100?image=1005" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
-                                                 <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}">moshuowen</a></div>
-                                             </div>
-                                             <div class="item">
-                                                 <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2019-11-8</span>
-
-                                             </div>
-                                             <div class="item">
-                                                 <i class="eye icon"></i><span th:text="${blog.views}">1024</span>
-                                             </div>
-                                         </div>
-
-
-
-                                     </div>
-                                     <div class="right aligned five wide column">
-                                         <a href="#" target="_blank" class=" ui label teal basic m-padded-tiny m-text-thin" th:text="${blog.type.name}">认知升级</a>
-                                     </div>
-
-                                 </div>
-
-                             </div>
-
-                             <div class="five wide column">
-                                 <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                                     <img src="https://picsum.photos/800/450?image=1005" th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image">
-                                 </a>
-                             </div>
-
-                         </div>
-
-                     </div>
-<!--/*-->
-                     <div class="ui padded vertical segment m-padded-tb-large">
-                         <div class="ui grid">
-
-                             <div class="eleven wide column">
-                                 <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
-                                 <p class="m-text">这么多年我一直在思考关于财富自由的定义，财富自由：就是有足够多的钱和时间做你想做的事情
-                                     这个定义对我来说虽然有意义，但是没有足够的行动指导意义，所以我自己琢磨出一个自己对财富自由的定义:
-                                     所谓的财富自由就是一个人在也无需为了生活必需而出售自己的时间
-                                 </p>
-                                 <div class="ui grid">
-                                     <div class="eleven wide column">
-                                         <!--                                        文章页下面的样式-->
-                                         <div class="ui mini horizontal link list">
-                                             <div class="item">
-                                                 <img src="https://picsum.photos/100/100?image=1005" alt="" class="ui avatar image">
-                                                 <div class="content"><a href="#" class="header">moshuowen</a></div>
-                                             </div>
-                                             <div class="item">
-                                                 <i class="calendar icon"></i>2019-11-8
-
-                                             </div>
-                                             <div class="item">
-                                                 <i class="eye icon"></i>1024
-                                             </div>
-                                         </div>
-
-
-
-                                     </div>
-                                     <div class="right aligned five wide column">
-                                         <a href="#" target="_blank" class=" ui label teal basic m-padded-tiny m-text-thin">认知升级</a>
-                                     </div>
-
-                                 </div>
-
-                             </div>
-
-                             <div class="five wide column">
-                                 <a href="#" target="_blank">
-                                     <img src="https://picsum.photos/800/450?image=1005" alt="" class="ui rounded image">
-                                 </a>
-                             </div>
-
-                         </div>
-
-                     </div>
-
-                     <div class="ui padded vertical segment m-padded-tb-large">
-                         <div class="ui grid">
-
-                             <div class="eleven wide column">
-                                 <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
-                                 <p class="m-text">这么多年我一直在思考关于财富自由的定义，财富自由：就是有足够多的钱和时间做你想做的事情
-                                     这个定义对我来说虽然有意义，但是没有足够的行动指导意义，所以我自己琢磨出一个自己对财富自由的定义:
-                                     所谓的财富自由就是一个人在也无需为了生活必需而出售自己的时间
-                                 </p>
-                                 <div class="ui grid">
-                                     <div class="eleven wide column">
-                                         <!--                                        文章页下面的样式-->
-                                         <div class="ui mini horizontal link list">
-                                             <div class="item">
-                                                 <img src="https://picsum.photos/100/100?image=1005" alt="" class="ui avatar image">
-                                                 <div class="content"><a href="#" class="header">moshuowen</a></div>
-                                             </div>
-                                             <div class="item">
-                                                 <i class="calendar icon"></i>2019-11-8
-
-                                             </div>
-                                             <div class="item">
-                                                 <i class="eye icon"></i>1024
-                                             </div>
-                                         </div>
-
-
-
-                                     </div>
-                                     <div class="right aligned five wide column">
-                                         <a href="#" target="_blank" class=" ui label teal basic m-padded-tiny m-text-thin">认知升级</a>
-                                     </div>
-
-                                 </div>
-
-                             </div>
-
-                             <div class="five wide column">
-                                 <a href="#" target="_blank">
-                                     <img src="https://picsum.photos/800/450?image=1005" alt="" class="ui rounded image">
-                                 </a>
-                             </div>
-
-                         </div>
-
-                     </div>
-<!--*/-->
-                     <!--这里是文章页的内容-->
-
-                 </div>
-
-
-                 <!--footer-->
-                 <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
-
-                     <div class="ui middle aligned two column grid" >
-                         <div class="column">
-<!--                                 <a th:href = "@{/admin/types(page=${page.number}-1)}" class="item" th:unless="${page.first}">上一页</a>-->
-<!--                                 <a th:href = "@{/admin/types(page=${page.number}+1)}" class="item" th:unless="${page.last}">下一页</a>-->
-                             <a href="#" th:href = "@{/(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
-                         </div>
-
-                         <div class="right aligned column">
-                             <a href="#" th:href = "@{/(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
-                         </div>
-                     </div>
+                 <div class="right aligned column">
+                     共<h3 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}">14</h3>篇
                  </div>
              </div>
+         </div>
+         <!--content-->
+         <div class="ui attached segment">
+                 <!--这里是文章页的内容-->
+                 <div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
+                     <div class="ui middle aligned mobile reversed stackable grid" >
+                        <!--middle aligned 图片垂直居中-->
+                         <div class="eleven wide column">
+                             <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">你真的理解什么是财富自由吗？</a> </h3>
+                             <p class="m-text" th:text="|${blog.description}.....|">这么多年我一直在思考关于财富自由的定义，财富自由：就是有足够多的钱和时间做你想做的事情
+                                 这个定义对我来说虽然有意义，但是没有足够的行动指导意义，所以我自己琢磨出一个自己对财富自由的定义:
+                                 所谓的财富自由就是一个人在也无需为了生活必需而出售自己的时间
+                             </p>
+                             <div class="ui grid">
+                                 <div class="eleven wide column">
+                                     <!--文章页下面的样式-->
+                                     <div class="ui mini horizontal link list">
+                                         <div class="item">
+                                             <img src="https://picsum.photos/100/100?image=1005" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                                             <div class="content"><a href="#" class="header" th:text="${blog.user.nickname}">moshuowen</a></div>
+                                         </div>
+                                         <div class="item">
+                                             <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2019-11-8</span>
+                                         </div>
+                                         <div class="item">
+                                             <i class="eye icon"></i> <span th:text="${blog.views}">10086</span>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="right aligned five wide column">
+                                     <a href="#" target="_blank" class=" ui label teal basic m-padded-tiny m-text-thin" th:text="${blog.type.name}">分类名称</a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="five wide column">
+                             <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                                 <img src="https://picsum.photos/800/450?image=1005" th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image">
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+<!--/*-->
+                 <div class="ui padded vertical segment m-padded-tb-large">
+                     <div class="ui grid">
+
+                         <div class="eleven wide column">
+                             <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
+                             <p class="m-text">这么多年我一直在思考关于财富自由的定义，财富自由：就是有足够多的钱和时间做你想做的事情
+                                 这个定义对我来说虽然有意义，但是没有足够的行动指导意义，所以我自己琢磨出一个自己对财富自由的定义:
+                                 所谓的财富自由就是一个人在也无需为了生活必需而出售自己的时间
+                             </p>
+                             <div class="ui grid">
+                                 <div class="eleven wide column">
+                                     <!--文章页下面的样式-->
+                                     <div class="ui mini horizontal link list">
+                                         <div class="item">
+                                             <img src="https://picsum.photos/100/100?image=1005" alt="" class="ui avatar image">
+                                             <div class="content"><a href="#" class="header">moshuowen</a></div>
+                                         </div>
+                                         <div class="item">
+                                             <i class="calendar icon"></i>2019-11-8
+                                         </div>
+                                         <div class="item">
+                                             <i class="eye icon"></i>1024
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="right aligned five wide column">
+                                     <a href="#" target="_blank" class=" ui label teal basic m-padded-tiny m-text-thin">认知升级</a>
+                                 </div>
+
+                             </div>
+
+                         </div>
+
+                         <div class="five wide column">
+                             <a href="#" target="_blank">
+                                 <img src="https://picsum.photos/800/450?image=1005" alt="" class="ui rounded image">
+                             </a>
+                         </div>
+
+                     </div>
+
+                 </div>
+
+                 <div class="ui padded vertical segment m-padded-tb-large">
+                     <div class="ui grid">
+
+                         <div class="eleven wide column">
+                             <h3 class="ui header">你真的理解什么是财富自由吗？</h3>
+                             <p class="m-text">这么多年我一直在思考关于财富自由的定义，财富自由：就是有足够多的钱和时间做你想做的事情
+                                 这个定义对我来说虽然有意义，但是没有足够的行动指导意义，所以我自己琢磨出一个自己对财富自由的定义:
+                                 所谓的财富自由就是一个人在也无需为了生活必需而出售自己的时间
+                             </p>
+                             <div class="ui grid">
+                                 <div class="eleven wide column">
+                                     <!--文章页下面的样式-->
+                                     <div class="ui mini horizontal link list">
+                                         <div class="item">
+                                             <img src="https://picsum.photos/100/100?image=1005" alt="" class="ui avatar image">
+                                             <div class="content"><a href="#" class="header">moshuowen</a></div>
+                                         </div>
+                                         <div class="item">
+                                             <i class="calendar icon"></i>2019-11-8
+                                         </div>
+                                         <div class="item">
+                                             <i class="eye icon"></i>1024
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="right aligned five wide column">
+                                     <a href="#" target="_blank" class=" ui label teal basic m-padded-tiny m-text-thin">认知升级</a>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="five wide column">
+                             <a href="#" target="_blank">
+                                 <img src="https://picsum.photos/800/450?image=1005" alt="" class="ui rounded image">
+                             </a>
+                         </div>
+
+                     </div>
+
+                 </div>
+<!--*/-->
+<!--这里是文章页的内容-->
+             </div>
+
+             <!--footer-->
+         <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
+             <div class="ui middle aligned two column grid" >
+                 <div class="column">
+                     <a href="#" th:href = "@{/(page=${page.number}-1)}" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
+                 </div>
+                 <div class="right aligned column">
+                     <a href="#" th:href = "@{/(page=${page.number}+1)}" th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
+                 </div>
+             </div>
+        </div>
+
+    </div>
 
              <!--右边的top-->
-             <div class="five wide column">
-<!--                     分类-->
-                 <div class="ui segments">
-                     <div class="ui secondary segment">
-                         <div class="ui two column grid">
-                             <div class=" column"><i class="idea icon"></i>分类</div>
-                             <div class="right aligned column"><a href="#" target="_blank"> more <i class="angle double right icon"></i></a></div>
-                         </div>
+    <div class="five wide column">
+<!--分类-->
+             <div class="ui segments">
+                 <div class="ui secondary segment">
+                     <div class="ui two column grid">
+                         <div class=" column"><i class="idea icon"></i>分类</div>
+                         <div class="right aligned column"><a href="#" target="_blank"> more <i class="angle double right icon"></i></a></div>
                      </div>
-                     <div class="ui teal segment">
-                         <div class="ui fluid vertical menu" >
-                             <a href="#" class="item" th:each="type : ${types}">
-                                <span th:text="${type.name}"> 学习日志</span>
-                               <!--左尖角标签-->
-                                 <div class="ui teal basic left pointing label" th:text="${#arrays.length(type.blogs)}">13</div><!--item 里默认在右边-->
-                             </a>
-<!--/*-->
-
-                             <a href="#" class="item">
-                                 思想与感悟
-                               <!--左尖角标签-->
-                                 <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
-                             </a>
-
-                             <a href="#" class="item">
-                                 java
-                               <!--左尖角标签-->
-                                 <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
-                             </a>
-
-                             <a href="#" class="item">
-                                 马拉松
-                               <!--左尖角标签-->
-                                 <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
-                             </a>
-
-                             <a href="#" class="item">
-                                 数据结构与算法
-                               <!--左尖角标签-->
-                                 <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
-                             </a>
-<!--*/-->
-                         </div>
-                     </div>
-
                  </div>
-<!--                     标签-->
-             <div class="ui segments m-margin-top-large">
-                     <div class="ui secondary segment">
-                         <div class="ui two column grid">
-                             <div class="column"><i class="tags icon"></i>标签</div>
-                             <div class="right aligned column"><a href="#" target="_blank"> more <i class="angle double right icon"></i></a></div>
-                         </div>
-                     </div>
                  <div class="ui teal segment">
-                     <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each=" tag: ${tags}">
-                     <span th:text="${tag.name}">方法论</span>    <div class="detail" th:text="${#arrays.length(tag.blogs)}">6</div>
-                    </a>
+                     <div class="ui fluid vertical menu" >
+                         <a href="#" class="item" th:each="type : ${types}">
+                            <span th:text="${type.name}"> 这里是分类的栏目</span>
+                           <!--左尖角标签-->
+                             <div class="ui teal basic left pointing label" th:text="${#arrays.length(type.blogs)}">13</div><!--item 里默认在右边-->
+                         </a>
 <!--/*-->
-                     <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
-                         python <div class="detail">10</div>
-                     </a>
 
-                     <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
-                         建站 <div class="detail">5</div>
-                     </a>
-<!--                     */-->
+                         <a href="#" class="item">
+                             思想与感悟
+                           <!--左尖角标签-->
+                             <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
+                         </a>
+
+                         <a href="#" class="item">
+                             java
+                           <!--左尖角标签-->
+                             <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
+                         </a>
+
+                         <a href="#" class="item">
+                             马拉松
+                           <!--左尖角标签-->
+                             <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
+                         </a>
+
+                         <a href="#" class="item">
+                             数据结构与算法
+                           <!--左尖角标签-->
+                             <div class="ui teal basic left pointing label">13</div><!--item 里默认在右边-->
+                         </a>
+<!--*/-->
+                     </div>
                  </div>
 
              </div>
-          <!--最新推荐-->
-                 <div class="ui segments m-margin-top-large">
-                     <div class="ui secondary segment">
-                         <div class="ui two column grid">
-                             <div class="column"><i class="bookmark icon"></i>最新推荐</div>
-                             <div class="right aligned column"><a href="#" target="_blank"> more <i class="angle double right icon"></i></a></div>
-                         </div>
+<!--                     标签-->
+         <div class="ui segments m-margin-top-large">
+                 <div class="ui secondary segment">
+                     <div class="ui two column grid">
+                         <div class="column"><i class="tags icon"></i>标签</div>
+                         <div class="right aligned column"><a href="#" target="_blank"> more <i class="angle double right icon"></i></a></div>
                      </div>
-                     <div class="ui segment" th:each="blog : ${recommendBlogs}">
-                     <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}">用户故事(user story)</a>
-                    </div>
-<!--/*-->
-                     <div class="ui segment">
-                         <a href="#" target="_blank" class="m-black m-text-thin">用户故事(user story)</a>
-                     </div>
-                     <div class="ui segment">
-                         <a href="#" target="_blank" class="m-black m-text-thin">用户故事(user story)</a>
-                     </div>
-<!--*/-->
-
                  </div>
+             <div class="ui teal segment">
+                <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny" th:each=" tag: ${tags}">
+                 <span th:text="${tag.name}">标签鸭</span> <div class="detail" th:text="${#arrays.length(tag.blogs)}">6</div>
+                </a>
+<!--/*-->
+                 <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                     python <div class="detail">10</div>
+                 </a>
 
-           <!--二维码-->
-             <h4 class="ui horizontal divider heade m-margin-top-larger">扫码关注我</h4>
-             <div class="ui centered card" style="width: 11em">
-                 <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image ">
+                 <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                     建站 <div class="detail">5</div>
+                 </a>
+<!--*/-->
              </div>
 
          </div>
+      <!--最新推荐-->
+             <div class="ui segments m-margin-top-large">
+                 <div class="ui secondary segment">
+                     <div class="ui two column grid">
+                         <div class="column"><i class="bookmark icon"></i>最新推荐</div>
+                         <div class="right aligned column"><a href="#" target="_blank"> more <i class="angle double right icon"></i></a></div>
+                     </div>
+                 </div>
+                 <div class="ui segment" th:each="blog : ${recommendBlogs}">
+                 <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}">这里是最新推荐</a>
+                </div>
+<!--/*-->
+                 <div class="ui segment">
+                     <a href="#" target="_blank" class="m-black m-text-thin">用户故事(user story)</a>
+                 </div>
+                 <div class="ui segment">
+                     <a href="#" target="_blank" class="m-black m-text-thin">用户故事(user story)</a>
+                 </div>
+<!--*/-->
+
+             </div>
+
+       <!--二维码-->
+         <h4 class="ui horizontal divider heade m-margin-top-larger">扫码关注我</h4>
+         <div class="ui centered card" style="width: 11em">
+             <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image ">
+         </div>
+
+     </div>
     </div>
 </div>
 </div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 
@@ -391,7 +352,6 @@
 <!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-
 <!--/*/</th:block>/*/-->
 
 <script>

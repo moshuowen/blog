@@ -66,6 +66,11 @@ public class BlogServiceImpl implements BlogService {
     }//主页分页的数据
 
     @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+        return blogResponsitory.findByQuery(query,pageable);
+    }
+
+    @Override
     public List<Blog> listRecommendBlogTop(Integer size) {
         Sort sort = Sort.by(Sort.Direction.DESC,"updateTime");
         Pageable pageable = PageRequest.of(0,size,sort);
