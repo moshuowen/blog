@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类新增</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
+
+</head>
+<body>
+<!--    导航-->
+    <nav th:replace="admin/_fragments :: menu(2)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">管理后台</h2>
+                <a href="#" class=" m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
+                <a href="#" class="m-item item m-mobile-hide"> <i class="mini idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+                <div class="right menu">
+                    <div class="ui m-item dropdown item m-mobile-hide">
+                        <img src="https://picsum.photos/100/100?image=1005" alt="" class="ui avatar image">
+                        moshuowen
+                        <i class="dropdown icon"></i>
+                        <div class="ui menu">
+                            <a href="#" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+<!--二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" th:href="@{/admin/types/input}" class="active teal item">新增</a>
+                <a href="#" th:href="@{/admin/types}" class="item">列表</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<!--中间内容-->
+    <div class="m-container-small m-padded-tb-big">
+        <div class="ui container">
+            <form action="#"  method="post"  th:object="${type}" th:action="*{id}== null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
+<!--                选择他调用是编辑前还是编辑后-->
+                <input type="hidden" name="id" th:value="*{id}">
+
+                <div class="required field">
+<!--                    不通过则将页面标红-->
+                    <div class="ui left labeled input">
+                        <label  class="ui basic teal label">名称</label>
+                        <input type="text" name="name" placeholder="分类名称" th:value="*{name}">
+                    </div>
+                </div>
+
+<!--th:value="*{name}" 拿到name的信息-->
+
+<!-- 自定义的标题检查在这里显示-->
+                <div class="ui error message"></div>
+                <!--/*/
+                <div class="ui negative message" th:if="${#fields.hasErrors('name')}"  >
+                  <i class="close icon"></i>
+                  <div class="header">验证失败</div>
+                  <p th:errors="*{name}">提交信息不符合规则</p>
+                </div>
+                 /*/-->
+
+
+<!--校验的数据域是否有错：name，有错的话拿到Type的message-->
+                <div class="ui right aligned container">
+                    <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+                    <button class="ui teal submit button">提交</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<!--底部-->
+    <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+    <!--微信头像-->
+                            <img src="../../static/images/wechat.png" class="ui rounded image" alt="" style="width: 100px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                    <div class="ui inverted link list">
+<!--                        最新的博客列表-->
+                            <a href="#" class="item">用户故事(user story)</a>
+                            <a href="#" class="item">用户故事(user story)</a>
+                            <a href="#" class="item">用户故事(user story)</a>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+<!--                    联系方式-->
+                    <div class="ui inverted link list">
+                        <a href="#" class="item "><i class="qq icon"></i>2083643622</a>
+                        <a href="#" class="item"><i class="envelope outline icon"></i>moshuowen@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+<!--                    首页blog的简介-->
+                    <div class="ui inverted link list">
+                        <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，我会在这里分享我关于编程，生活，思考的内容，希望对这里来看的人有所帮助</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019-2020 msw Designed by moshuowen</p>
+        </div>
+    </footer>
+
+
+<!--cdn引入-->
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../../static/lib/editormd/editormd.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+<script>
+    //初始化Markdown编辑器
+    var contentEditor;
+    $(function() {
+        contentEditor = editormd("md-content", {
+            width   : "100%",
+            height  : 640,
+            syncScrolling : "single",
+            path    : "../../static/lib/editormd/lib/"
+        });
+    });
+
+    // function compile(){
+    //     var text = document.getElementById("content").value;
+    //     var converter = new showdown.Converter();
+    //     var html = converter.makeHtml(text);
+    //     document.getElementById("result").innerHTML = html;
+    // }
+
+
+    $('.menu.toggle').click(function() {
+        $('.m-item').toggleClass('m-mobile-hide');
+        //jQuery 属性操作 - toggleClass() 方法
+        // toggleClass() 对设置或移除被选元素的一个或多个类进行切换。
+        // 该方法检查每个元素中指定的类。如果不存在则添加类，如果已设置则删除之。这就是所谓的切换效果。
+        // 不过，通过使用 "switch" 参数，您能够规定只删除或只添加类。
+    });
+
+    $('#payButton').popup({
+        popup :  $('.payQR.popup'),
+        on : 'click',
+        position : 'bottom center'
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'click'
+        // on: 'hover'
+        // 下拉三角放上去就会弹出注销
+    });
+
+    $('.ui.form').form({
+        fields :{
+            title :{
+               identifier : 'name111',
+                rules :[{
+                   type:'empty',
+                    prompt :'请输入分类名称'
+                    // 表单校验，消息不通过标红，前端校验
+                }]
+            }
+        }
+    });
+
+    //消息提示关闭初始化，message具备可关闭功能
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
+</script>
+
+</body>
+</html>
