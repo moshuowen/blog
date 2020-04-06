@@ -1,9 +1,13 @@
 package cn.mo.blog.vo;
 
 public class blogQuery {
+
     private String title;
     private Long typeId;
     private boolean recommend;
+
+    public blogQuery() {
+    }
 
     public String getTitle() {
         return title;

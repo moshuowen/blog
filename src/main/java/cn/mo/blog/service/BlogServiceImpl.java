@@ -17,13 +17,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.persistence.criteria.*;
+import java.util.*;
 
 @Service
 public class BlogServiceImpl implements BlogService {
@@ -62,7 +57,7 @@ public class BlogServiceImpl implements BlogService {
                 }//搜索查询
                 if (blog.getTypeId() != null) {
                     predicates.add(cb.equal(root.<Type>get("type").get("id"), blog.getTypeId()));
-                }//分类查询
+                }//根据分类来查询
                 if (blog.isRecommend()) {
                     predicates.add(cb.equal(root.<Boolean>get("recommend"),blog.isRecommend()));
                 }//是否被推荐的查询
@@ -80,6 +75,17 @@ public class BlogServiceImpl implements BlogService {
     }//主页分页的数据
 
     @Override
+    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+        return blogResponsitory.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join = root.join("tags");
+                return cb.equal(join.get("id"),tagId);
+            }
+        },pageable);
+    }
+
+    @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
         return blogResponsitory.findByQuery(query,pageable);
     }
@@ -91,6 +97,22 @@ public class BlogServiceImpl implements BlogService {
         return  blogResponsitory.findTop(pageable);
 
     }
+
+    @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        List<String> years = blogResponsitory.findGroupYear();
+        Map<String, List<Blog>> map = new HashMap<>();
+        for (String year : years) {
+            map.put(year, blogResponsitory.findByYear(year));
+        }
+        return map;
+    }
+
+    @Override
+    public Long countBlog() {
+        return blogResponsitory.count();
+    }
+
 
 
     @Transactional

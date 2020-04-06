@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title}) ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我</title>
@@ -9,15 +9,15 @@
 </head>
 <body>
 <!--    导航-->
-    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted  secondary stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
                 <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
-                <a href="#" class=" m-item item m-mobile-hide"> <i class="mini idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"> <i class="mini idea icon"></i>分类</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
-                <a href="#" class="active m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
                     <div class="ui icon inverted transparent input">
                         <input type="text" placeholder="search...">
@@ -33,14 +33,13 @@
         </a>
     </nav>
 
-
 <!--中间内容-->
     <div class="m-container-small m-padded-tb-big">
         <div class="ui container">
             <div class="ui grid">
                 <div class="eleven wide column">
                     <div class="ui segment">
-                        <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                        <img src="../static/images/about.jpeg" th:src="@{/images/about.jpeg}" style="max-width: 100%;" alt="" class="ui rounded image">
                     </div>
                 </div>
                 <div class="five wide column">
@@ -48,35 +47,28 @@
                         <div class="ui header">关于我</div>
                     </div>
                     <div class="ui attached segment">
-                        <p class="m-text">msw <br> 一个个折腾在0和1世界里的学生 </p>
-                        <p class="m-text">热爱编程，正在探索新的方法...</p>
+                        <p class="m-text">shuowen<br> 一个的学生 </p>
+                        <p class="m-text">热爱运动，偶尔编程...</p>
                     </div>
                     <div class="ui attached segment ">
                         <div class="ui orange basic left pointing label m-margin-tb-tiny">编程</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">思想</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">马拉松</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">健身</div>
                     </div>
                     <div class="ui attached segment">
                         <div class="ui orange basic left pointing label m-margin-tb-tiny">Java</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">JavaScript</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Node</div>
-                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Python</div>
                         <div class="ui orange basic left pointing label m-margin-tb-tiny">...</div>
                     </div>
                     <div class="ui attached segment">
-                        <div class="ui circular icon button"> <i class="github icon"></i> </div>
+                        <a href="https://github.com/moshuowen/blog" target="_blank" class="ui circular icon button"> <i class="github icon"></i> </a>
                         <div class="ui wechat circular icon button"> <i class="weixin icon"></i> </div>
                         <div class="ui qq circular icon button" data-content="2083643622" data-position="bottom center"> <i class="qq icon"></i> </div>
                     </div>
 
                     <div class="ui wechat-qr flowing popup transition hidden">
-                        <img src="../static/images/wechat.png" alt="" class="ui rounded image" style="width: 110px">
+                        <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image" style="width: 110px">
                     </div>
+
                 </div>
-
             </div>
-
         </div>
 
     </div>
@@ -86,14 +78,14 @@
 <br>
 <br>
 <!--底部-->
-    <footer class="ui inverted vertical segment m-padded-tb-massive">
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
         <div class="ui center aligned container">
             <div class="ui inverted divided stackable grid">
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
-    <!--微信头像-->
-                            <img src="../static/images/wechat.png" class="ui rounded image" alt="" style="width: 100px">
+                        <!--微信头像-->
+                            <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image" alt="" style="width: 100px">
                         </div>
                     </div>
                 </div>
@@ -101,16 +93,14 @@
                 <div class="three wide column">
                     <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
                     <div class="ui inverted link list">
-<!--                        最新的博客列表-->
-                            <a href="#" class="item">用户故事(user story)</a>
-                            <a href="#" class="item">用户故事(user story)</a>
-                            <a href="#" class="item">用户故事(user story)</a>
+                            <!--最新的博客列表-->
+                            <a href="#" class="item">最新的博客列表在这里循环</a>
                     </div>
                 </div>
 
                 <div class="three wide column">
                     <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
-<!--                    联系方式-->
+                    <!--联系方式-->
                     <div class="ui inverted link list">
                         <a href="#" class="item "><i class="qq icon"></i>2083643622</a>
                         <a href="#" class="item"><i class="envelope outline icon"></i>moshuowen@gmail.com</a>
@@ -132,8 +122,16 @@
 
 
 <!--cdn引入-->
+<!--thymeleaf 中会被引入-->
+<!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<script src="../static/lib/prism/prism.js"></script>
+<script src="../static/lib/tocbot/tocbot.min.js"></script>
+<script src="../static/lib/qrcode/qrcode.min.js"></script>
+<script src="../static/lib/waypot/jquery.waypoints.min.js"></script>
+<!--/*/</th:block>/*/-->
 
 <script>
 
