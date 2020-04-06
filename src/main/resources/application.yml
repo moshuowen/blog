@@ -17,3 +17,6 @@ logging:
     cn.mo: debug
   file:
     name: log/blog-dev.log
+
+
+comment.avatar: /images/avatar.png

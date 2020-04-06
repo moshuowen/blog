@@ -16,7 +16,7 @@ public class Comment {
     private String nickname;
     private String email;
     private String content;
-    private String avater;
+    private String avatar;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
 
@@ -29,6 +29,7 @@ public class Comment {
     @ManyToOne
     private Comment parentComment;
 
+    private boolean adminComment;
 
     public Comment() {
     }
@@ -53,7 +54,13 @@ public class Comment {
         return email;
     }
 
+    public String getAvatar() {
+        return avatar;
+    }
 
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 
     public void setEmail(String email) {
         this.email = email;
@@ -65,14 +72,6 @@ public class Comment {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getAvater() {
-        return avater;
-    }
-
-    public void setAvater(String avater) {
-        this.avater = avater;
     }
 
     public Date getCreateTime() {
@@ -107,6 +106,14 @@ public class Comment {
         this.parentComment = parentComment;
     }
 
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
+    }
+
     @Override
     public String toString() {
         return "Comment{" +
@@ -114,8 +121,12 @@ public class Comment {
                 ", nickname='" + nickname + '\'' +
                 ", email='" + email + '\'' +
                 ", content='" + content + '\'' +
-                ", avater='" + avater + '\'' +
+                ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
+                ", blog=" + blog +
+                ", replyComment=" + replyComment +
+                ", parentComment=" + parentComment +
+                ", adminComment=" + adminComment +
                 '}';
     }
 }
