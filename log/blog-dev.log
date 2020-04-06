@@ -283,3 +283,123 @@ Caused by: javax.persistence.EntityNotFoundException: Unable to find cn.mo.blog.
 2020-04-07 00:25:10.784  INFO 8448 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Return : redirect:/comments/8
 2020-04-07 00:25:10.793  INFO 8448 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/comments/8', ip='127.0.0.1', classMethod='cn.mo.blog.web.CommentController.comments', args=[8, {}]}
 2020-04-07 00:25:10.797  INFO 8448 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Return : blog :: commentList
+2020-04-07 00:30:20.451  INFO 19620 --- [restartedMain] cn.mo.blog.BlogApplication               : Starting BlogApplication on moshuowen with PID 19620 (C:\Users\moshu\Desktop\idea\myBlog\target\classes started by moshu in C:\Users\moshu\Desktop\idea\myBlog)
+2020-04-07 00:30:20.454 DEBUG 19620 --- [restartedMain] cn.mo.blog.BlogApplication               : Running with Spring Boot v2.2.5.RELEASE, Spring v5.2.4.RELEASE
+2020-04-07 00:30:20.455  INFO 19620 --- [restartedMain] cn.mo.blog.BlogApplication               : No active profile set, falling back to default profiles: default
+2020-04-07 00:30:20.536  INFO 19620 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\moshu\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/moshu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/moshu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/moshu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/moshu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/moshu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/moshu/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-07 00:30:20.536  INFO 19620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-07 00:30:20.537  INFO 19620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-07 00:30:21.361  INFO 19620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-07 00:30:21.473  INFO 19620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104ms. Found 5 JPA repository interfaces.
+2020-04-07 00:30:22.392  INFO 19620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-07 00:30:22.402  INFO 19620 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-07 00:30:22.403  INFO 19620 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-04-07 00:30:22.552  INFO 19620 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-07 00:30:22.553  INFO 19620 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2016 ms
+2020-04-07 00:30:22.834  INFO 19620 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-07 00:30:22.897  INFO 19620 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-07 00:30:23.029  INFO 19620 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-07 00:30:23.158  INFO 19620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-07 00:30:23.965  INFO 19620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-07 00:30:23.989  INFO 19620 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-07 00:30:24.974  INFO 19620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-07 00:30:24.982  INFO 19620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:30:25.060  INFO 19620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-07 00:30:25.897  WARN 19620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-07 00:30:26.362  INFO 19620 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:30:26.458  INFO 19620 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-07 00:30:27.059  INFO 19620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-07 00:30:27.062  INFO 19620 --- [restartedMain] cn.mo.blog.BlogApplication               : Started BlogApplication in 7.659 seconds (JVM running for 9.729)
+2020-04-07 00:30:29.919  INFO 19620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-07 00:30:29.920  INFO 19620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-07 00:30:29.941  INFO 19620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-04-07 00:30:33.948  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-04-07 00:30:34.058  WARN 19620 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-04-07 00:30:34.074  WARN 19620 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-04-07 00:30:34.081  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Return : index
+2020-04-07 00:30:34.580  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:30:34.589  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:30:37.338  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-04-07 00:30:37.354  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Return : index
+2020-04-07 00:30:37.862  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:30:37.871  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:30:40.827  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:30:40.851  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Return : types
+2020-04-07 00:30:41.403  INFO 19620 --- [http-nio-8080-exec-3] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:30:41.411  INFO 19620 --- [http-nio-8080-exec-3] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:08.911  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:31:08.948  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Return : tags
+2020-04-07 00:31:10.040  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:10.049  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:11.110  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='cn.mo.blog.web.ArchiveShowController.archives', args=[{}]}
+2020-04-07 00:31:11.141  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Return : archives
+2020-04-07 00:31:11.756  INFO 19620 --- [http-nio-8080-exec-9] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:11.765  INFO 19620 --- [http-nio-8080-exec-9] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:12.868  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='cn.mo.blog.web.AboutShowController.about', args=[]}
+2020-04-07 00:31:12.874  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Return : about
+2020-04-07 00:31:13.346  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:13.357  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:14.359  INFO 19620 --- [http-nio-8080-exec-6] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='cn.mo.blog.web.AboutShowController.about', args=[]}
+2020-04-07 00:31:14.361  INFO 19620 --- [http-nio-8080-exec-6] cn.mo.blog.aspect.LogAspect              : Return : about
+2020-04-07 00:31:14.807  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:14.815  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:53.185  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='cn.mo.blog.web.AboutShowController.about', args=[]}
+2020-04-07 00:31:53.186  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Return : about
+2020-04-07 00:31:53.949  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:53.957  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:55.314  INFO 19620 --- [http-nio-8080-exec-9] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='cn.mo.blog.web.ArchiveShowController.archives', args=[{}]}
+2020-04-07 00:31:55.453  INFO 19620 --- [http-nio-8080-exec-9] cn.mo.blog.aspect.LogAspect              : Return : archives
+2020-04-07 00:31:55.987  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:55.996  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:56.708  INFO 19620 --- [http-nio-8080-exec-6] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:31:56.721  INFO 19620 --- [http-nio-8080-exec-6] cn.mo.blog.aspect.LogAspect              : Return : tags
+2020-04-07 00:31:57.267  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:57.272  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:57.987  INFO 19620 --- [http-nio-8080-exec-3] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:31:57.996  INFO 19620 --- [http-nio-8080-exec-3] cn.mo.blog.aspect.LogAspect              : Return : types
+2020-04-07 00:31:58.452  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:58.458  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:31:59.195  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:31:59.210  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Return : tags
+2020-04-07 00:31:59.670  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:31:59.676  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:32.004  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:32:32.018  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Return : tags
+2020-04-07 00:32:32.812  INFO 19620 --- [http-nio-8080-exec-4] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:32:32.819  INFO 19620 --- [http-nio-8080-exec-4] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:34.610  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:32:34.623  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Return : tags
+2020-04-07 00:32:35.580  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:32:35.588  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:36.650  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='cn.mo.blog.web.ArchiveShowController.archives', args=[{}]}
+2020-04-07 00:32:36.664  INFO 19620 --- [http-nio-8080-exec-1] cn.mo.blog.aspect.LogAspect              : Return : archives
+2020-04-07 00:32:37.103  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:32:37.109  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:55.399  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='cn.mo.blog.web.ArchiveShowController.archives', args=[{}]}
+2020-04-07 00:32:55.438  INFO 19620 --- [http-nio-8080-exec-5] cn.mo.blog.aspect.LogAspect              : Return : archives
+2020-04-07 00:32:56.398  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:32:56.422  INFO 19620 --- [http-nio-8080-exec-8] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:57.288  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:32:57.302  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Return : tags
+2020-04-07 00:32:57.928  INFO 19620 --- [http-nio-8080-exec-6] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:32:57.934  INFO 19620 --- [http-nio-8080-exec-6] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:58.682  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='cn.mo.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-04-07 00:32:58.689  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Return : types
+2020-04-07 00:32:59.121  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:32:59.126  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:32:59.525  INFO 19620 --- [http-nio-8080-exec-9] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-04-07 00:32:59.544  INFO 19620 --- [http-nio-8080-exec-9] cn.mo.blog.aspect.LogAspect              : Return : index
+2020-04-07 00:33:00.146  INFO 19620 --- [http-nio-8080-exec-4] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:33:00.151  INFO 19620 --- [http-nio-8080-exec-4] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:33:01.302  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='cn.mo.blog.web.AboutShowController.about', args=[]}
+2020-04-07 00:33:01.303  INFO 19620 --- [http-nio-8080-exec-7] cn.mo.blog.aspect.LogAspect              : Return : about
+2020-04-07 00:33:01.728  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:33:01.735  INFO 19620 --- [http-nio-8080-exec-10] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:33:02.466  INFO 19620 --- [http-nio-8080-exec-3] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-04-07 00:33:02.480  INFO 19620 --- [http-nio-8080-exec-3] cn.mo.blog.aspect.LogAspect              : Return : index
+2020-04-07 00:33:02.999  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Rquest : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='cn.mo.blog.web.indexController.newblogs', args=[{}]}
+2020-04-07 00:33:03.009  INFO 19620 --- [http-nio-8080-exec-2] cn.mo.blog.aspect.LogAspect              : Return : _fragments :: newblogList
+2020-04-07 00:33:35.517  INFO 19620 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-07 00:33:35.520  INFO 19620 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-07 00:33:35.527  INFO 19620 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-07 00:33:35.549  INFO 19620 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
