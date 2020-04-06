@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/AboutShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/ArchiveShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/TagShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/TypeShowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/about.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/BlogResponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/dao/BlogResponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/service/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/vo/blogQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/vo/blogQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/_fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/types.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/types.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/archives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tags.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +231,8 @@
       <workItem from="1586095647847" duration="114000" />
       <workItem from="1586095785380" duration="6495000" />
       <workItem from="1586135912760" duration="11415000" />
-      <workItem from="1586165603354" duration="11024000" />
+      <workItem from="1586165603354" duration="11276000" />
+      <workItem from="1586178352067" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="types and login">
       <created>1585389069590</created>
@@ -332,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586165539761</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="渲染分类页和about页面">
+      <created>1586178293142</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1586178293142</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +369,8 @@
     <MESSAGE value="实现前端博客显示" />
     <MESSAGE value="markdown转化为html" />
     <MESSAGE value="添加评论功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加评论功能" />
+    <MESSAGE value="渲染分类页和about页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="渲染分类页和about页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="4" key="#Assign_Data_Sources" timestamp="1586163172592">
@@ -384,10 +385,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="1" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1586159175912" />
-    <state x="194" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586163187338">
+    <state x="194" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586180850512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="194" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586163187338" />
+    <state x="194" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586180850512" />
     <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1586171707407">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -400,10 +401,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="429" y="206" width="421" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1586087262613" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1586165536516">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1586178291848">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586165536516" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586178291848" />
     <state x="93" y="93" width="1093" height="493" key="DiffContextDialog" timestamp="1585136993640">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -412,38 +413,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="143" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584689926760" />
-    <state width="1238" height="241" key="GridCell.Tab.0.bottom" timestamp="1586178236119">
+    <state width="1238" height="493" key="GridCell.Tab.0.bottom" timestamp="1586181945513">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586178236119" />
-    <state width="1238" height="241" key="GridCell.Tab.0.center" timestamp="1586178236119">
+    <state width="1238" height="493" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586181945513" />
+    <state width="1238" height="493" key="GridCell.Tab.0.center" timestamp="1586181945512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586178236119" />
-    <state width="1238" height="241" key="GridCell.Tab.0.left" timestamp="1586178236118">
+    <state width="1238" height="493" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586181945512" />
+    <state width="1238" height="493" key="GridCell.Tab.0.left" timestamp="1586181945512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586178236118" />
-    <state width="1238" height="241" key="GridCell.Tab.0.right" timestamp="1586178236119">
+    <state width="1238" height="493" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586181945512" />
+    <state width="1238" height="493" key="GridCell.Tab.0.right" timestamp="1586181945512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586178236119" />
-    <state width="1238" height="241" key="GridCell.Tab.1.bottom" timestamp="1586178009375">
+    <state width="1238" height="493" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586181945512" />
+    <state width="1238" height="493" key="GridCell.Tab.1.bottom" timestamp="1586181943671">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586178009375" />
-    <state width="1238" height="241" key="GridCell.Tab.1.center" timestamp="1586178009375">
+    <state width="1238" height="493" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586181943671" />
+    <state width="1238" height="493" key="GridCell.Tab.1.center" timestamp="1586181943671">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586178009375" />
-    <state width="1238" height="241" key="GridCell.Tab.1.left" timestamp="1586178009375">
+    <state width="1238" height="493" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586181943671" />
+    <state width="1238" height="493" key="GridCell.Tab.1.left" timestamp="1586181943670">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586178009375" />
-    <state width="1238" height="241" key="GridCell.Tab.1.right" timestamp="1586178009375">
+    <state width="1238" height="493" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586181943670" />
+    <state width="1238" height="493" key="GridCell.Tab.1.right" timestamp="1586181943671">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="241" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586178009375" />
+    <state width="1238" height="493" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586181943671" />
     <state width="1238" height="204" key="GridCell.Tab.2.bottom" timestamp="1585756236645">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -460,14 +461,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1238" height="204" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1585756236644" />
-    <state x="221" y="86" key="IDE.errors.dialog" timestamp="1586165937331">
+    <state x="221" y="86" key="IDE.errors.dialog" timestamp="1586178372552">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="221" y="86" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1586165937331" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1586167123548">
+    <state x="221" y="86" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1586178372552" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1586181951122">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586167123548" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586181951122" />
     <state width="530" height="477" key="SwitcherDM" timestamp="1585909031992">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -480,14 +481,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="487" y="261" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1585137099726" />
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1586166591519">
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1586178449112">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586166591519" />
-    <state x="350" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585824407898">
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586178449112" />
+    <state x="350" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586178733759">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="350" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1585824407898" />
+    <state x="350" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1586178733759" />
     <state x="438" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586056824364">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
