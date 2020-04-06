@@ -17,6 +17,8 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini">
     <div class="ui container">
         <div class="ui inverted  secondary stackable menu">
+<!--            <a href="#" th:href="@{/admin}">-->
+<!--            </a>-->
             <h2 class="ui teal header item">Blog</h2>
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1}? 'active'"><i class="mini home icon"></i>首页</a>
             <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2}? 'active'"><i class="mini idea icon"></i>分类</a>
@@ -54,27 +56,32 @@
             </div>
 
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
-                <div class="ui inverted link list" th:each="blog : ${recommendBlogs}">
-                    <!--最新的博客列表-->
-                    <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-text-thin" th:text="${blog.title}" >用户故事（User Story）</a>
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">news</h4>
+                <div id="newblog-container">
+                    <div class="ui inverted link list"th:each="blog : ${newblogs}" th:fragment="newblogList" >
+                        <!--最新的博客列表-->
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank"   th:text="${blog.title}" >用户故事（User Story）</a>
+                    </div>
                 </div>
+
+
             </div>
 
             <div class="three wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
-                <!--                    联系方式-->
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">call me maybe </h4>
+                <!-- 联系方式-->
                 <div class="ui inverted link list">
-                    <a href="#" class="item "><i class="qq icon"></i>2083643622</a>
-                    <a href="#" class="item"><i class="envelope outline icon"></i>moshuowen@gmail.com</a>
+                    <a href="#" class="item " th:text="#{index.qq}">2083643622</a>
+                    <a href="#" class="item"><span th:text="#{index.email}">moshuowen@gmail.com</span></a>
                 </div>
             </div>
-
+<!--            <i class="envelope outline icon"></i>-->
+<!--            <i class="qq icon"></i>-->
             <div class="seven wide column">
-                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
-                <!--                    首页blog的简介-->
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">about</h4>
+                <!--首页blog的简介-->
                 <div class="ui inverted link list">
-                    <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，我会在这里分享我关于编程，生活，思考的内容，希望对这里来看的人有所帮助</p>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">大家好，我是小莫</p>
                 </div>
             </div>
         </div>
@@ -92,7 +99,9 @@
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../static/lib/waypot/jquery.waypoints.min.js" th:src="@{/lib/waypot/jquery.waypoints.min.js}"></script>
-
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 
 </th:block>
 

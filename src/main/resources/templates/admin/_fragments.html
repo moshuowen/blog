@@ -19,9 +19,10 @@
     <div class="ui container">
         <div class="ui inverted  secondary stackable menu">
             <h2 class="ui teal header item">管理后台</h2>
-            <a href="#" th:href="@{/admin/blogs} "class="m-item item m-mobile-hide" th:classappend="${n==1}? 'active'"><i class="mini home icon"></i>博客</a>
-            <a href="#" th:href="@{/admin/types} " class="m-item item m-mobile-hide" th:classappend="${n==2}? 'active'"> <i class="mini idea icon"></i>分类</a>
-            <a href="#" th:href="@{/admin/tags} "class="m-item item m-mobile-hide" th:classappend="${n==3}? 'active'"><i class="mini tags icon"></i>标签</a>
+            <a href="#" th:href="@{/admin/blogs} "class="m-item item m-mobile-hide" th:classappend="${n==1}? 'active'"><i class="mini home icon"></i>博客管理</a>
+            <a href="#" th:href="@{/admin/types} " class="m-item item m-mobile-hide" th:classappend="${n==2}? 'active'"> <i class="mini idea icon"></i>分类管理</a>
+            <a href="#" th:href="@{/admin/tags} "class="m-item item m-mobile-hide" th:classappend="${n==3}? 'active'"><i class="mini tags icon"></i>标签管理</a>
+            <a href="#" th:href="@{/} "class="m-item item m-mobile-hide" ><i class="home icon"></i>主页面</a>
             <div class="right menu">
                 <div class="ui m-item dropdown item m-mobile-hide">
                     <img src="https://picsum.photos/100/100?image=1005" th:src="@{${session.user.avatar}}" alt="" class="ui avatar image">
@@ -69,11 +70,11 @@
 
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
-                <div class="ui inverted link list">
-                    <!--                        最新的博客列表-->
-                    <a href="#" class="item">用户故事(user story)</a>
-                    <a href="#" class="item">用户故事(user story)</a>
-                    <a href="#" class="item">用户故事(user story)</a>
+                <div id="newblog-container">
+                    <div class="ui inverted link list" th:fragment="newblogList" >
+                        <!--最新的博客列表-->
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" th:each="blog : ${newblogs}"   class="item m-text-thin" th:text="${blog.title}" >用户故事（User Story）</a>
+                    </div>
                 </div>
             </div>
 
@@ -109,7 +110,9 @@
     <script src="../../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../../static/lib/waypot/jquery.waypoints.min.js" th:src="@{/lib/waypot/jquery.waypoints.min.js}"></script>
     <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
-
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </th:block>
 
 

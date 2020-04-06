@@ -10,6 +10,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  messages:
+    basename: messages
 
 logging:
   level:
@@ -20,3 +22,6 @@ logging:
 
 
 comment.avatar: /images/avatar.png
+#访客的头像
+
+

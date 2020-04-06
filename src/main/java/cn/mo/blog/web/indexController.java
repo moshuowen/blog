@@ -54,12 +54,12 @@ public class indexController {
         model.addAttribute("blog", blogService.getAndConvert(id));
         return "blog";
     }
-//
-//    @GetMapping("/footer/newblog")
-//    public String newblogs(Model model) {
-//        model.addAttribute("newblogs", blogService.listRecommendBlogTop(3));
-//        return "_fragments :: newblogList";
-//    }
+
+    @GetMapping("/footer/newblog")
+    public String newblogs(Model model) {
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(3));
+        return "_fragments :: newblogList";
+    }//动态获取底部的newBlogs 最终返回的是模板
 
 
 
