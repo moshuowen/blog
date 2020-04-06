@@ -24,10 +24,10 @@ public class Blog {
     private String firstPicture;
     private String flag;
     private Integer views;
-    private boolean appreciation;
-    private boolean shareSatement;
-    private boolean commentabled;
-    private boolean pulished;// 1 0
+    private boolean appreciation;//赞赏
+    private boolean shareSatement;//分享
+    private boolean commentabled;//评论
+    private boolean pulished;// 1 0 是否发布
     private boolean recommend;
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
