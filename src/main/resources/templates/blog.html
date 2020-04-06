@@ -506,8 +506,8 @@ h5,h6{font-size:1em;}
 
 
         </div>
-        <div id="comment-contrainer" class="ui bottom attached segment">
-<!--            留言区域-->
+        <div id="comment-container" class="ui bottom attached segment">
+            <!--留言区域-->
             <div class="ui teal segment">
                 <div class="ui threaded comments">
                     <h3 class="ui dividing header">Comments</h3>
@@ -584,6 +584,8 @@ h5,h6{font-size:1em;}
                </div>
             </div>
             <div class="ui form">
+                <input type="text" name="blog.id" th:value="${blog.id}">
+                <input type="text" name="parentComment.id" value="-1">
                 <div class="field">
                     <textarea name="content" placeholder="请输入评论信息..."></textarea>
                 </div>
@@ -601,7 +603,7 @@ h5,h6{font-size:1em;}
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-bottom-small">
-                        <button class="ui teal button m-mobile-wide">发布 <i class="edit mini icon"></i></button>
+                        <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide">发布 <i class="edit mini icon"></i></button>
                     </div>
                 </div>
             </div>
@@ -614,7 +616,7 @@ h5,h6{font-size:1em;}
     <div class="ui vertical icon buttons">
         <!-- positon fixed right 0 bottom 0-->
         <button type="button" class="ui toc teal button">目录</button>
-        <a href="#comment-contrainer" class="ui teal button">留言</a>
+        <a href="#comment-container" class="ui teal button">留言</a>
         <button class="ui wechat icon button"><i class="weixin icon"></i></button>
         <!--微信扫码阅读-->
         <button id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></button>
@@ -754,7 +756,7 @@ h5,h6{font-size:1em;}
 //平滑滚动
     $('#toTop-button').click(function () {
     $(window).scrollTo(0,500)
-    })
+    });
     //滚动政策
     var waypoint = new Waypoint({
         element: document.getElementById('waypoint'),
@@ -766,7 +768,77 @@ h5,h6{font-size:1em;}
             }
             console.log('Scrolled to waypoint!' + direction)
         }
-    })
+    });
+
+    //评论表单验证
+    $('.ui.form').form({
+        fields: {
+            title: {
+                identifier: 'content',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入评论内容'
+                }
+                ]
+            },
+            content: {
+                identifier: 'nickname',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入你的昵称'
+                }]
+            },
+            type: {
+                identifier: 'email',
+                rules: [{
+                    type: 'email',
+                    prompt: '请填写正确的邮箱地址'
+                }]
+            }
+        }
+    });
+
+
+
+    $('#commentpost-btn').click(function () {
+        var boo = $('.ui.form').form('validate form');
+        if (boo) {
+            console.log('评论表单校验成功');
+            postData();
+        } else {
+            console.log('评论表单校验失败');
+        }
+
+    });
+
+    function postData() {
+        $("#comment-container").load(/*[[@{/comments}]]*/"",{
+            "parentComment.id" : $("[name='parentComment.id']").val(),
+            "blog.id" : $("[name='blog.id']").val(),
+            "nickname": $("[name='nickname']").val(),
+            "email"   : $("[name='email']").val(),
+            "content" : $("[name='content']").val()
+        },function (responseTxt, statusTxt, xhr) {
+       // $(window).scrollTo($('#comment-container'),500);
+            clearContent();
+        });
+
+
+        function clearContent() {
+            $("[name='content']").val('');
+            $("[name='parentComment.id']").val(-1);
+            $("[name='content']").attr("placeholder", "请输入评论信息...");
+        };
+
+
+        function reply(obj) {
+            var commentId = $(obj).data('commentid');
+            var commentNickname = $(obj).data('commentnickname');
+            $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
+            $("[name='parentComment.id']").val(commentId);
+            $(window).scrollTo($('#comment-form'),500);
+        };
+    }
 </script>
 
 </body>
