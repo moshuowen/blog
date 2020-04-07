@@ -37,16 +37,16 @@ public class LoginController {
         if (user != null) {
             user.setPassword(null);
             session.setAttribute("user",user);
-            return "/admin/index";
+            return "admin/index";
         } else {
             attributes.addFlashAttribute("message", "用户名和密码错误");
-            return "redirect:/admin";//失败返回
+            return "redirect: /admin";//失败返回
         }
     }
 
     @GetMapping("/logout")
     public String logout(HttpSession session) {
         session.removeAttribute("user");
-        return "redirect:/admin";//注销返回
+        return "redirect: /admin";//注销返回
     }
 }

@@ -15,5 +15,19 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="blogs@47.240.116.3" uuid="2133a60c-af91-4f0e-8362-d4cbd5984482">
+      <database-info product="MySQL" version="8.0.16" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="8.0.16" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
 </project>

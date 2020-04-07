@@ -8,5 +8,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/blogs</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="blogs@47.240.116.3" uuid="2133a60c-af91-4f0e-8362-d4cbd5984482">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://47.240.116.3:3306/blogs</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -6,7 +6,9 @@
     </facet>
     <facet type="web" name="Web">
       <configuration>
-        <webroots />
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
@@ -82,6 +84,13 @@
     <orderEntry type="library" name="Maven: org.attoparser:attoparser:2.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.unbescape:unbescape:1.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.commonmark:commonmark:0.10.0" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.commonmark:commonmark-ext-heading-anchor:0.10.0" level="project" />
+    <orderEntry type="library" name="Maven: com.atlassian.commonmark:commonmark-ext-gfm-tables:0.10.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:2.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:8.0.19" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.2" level="project" />
@@ -100,13 +109,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.4.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.atlassian.commonmark:commonmark:0.10.0" level="project" />
-    <orderEntry type="library" name="Maven: com.atlassian.commonmark:commonmark-ext-heading-anchor:0.10.0" level="project" />
-    <orderEntry type="library" name="Maven: com.atlassian.commonmark:commonmark-ext-gfm-tables:0.10.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:2.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.5.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:8.0.19" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.2.5.RELEASE" level="project" />
