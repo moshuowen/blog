@@ -2,72 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="057c2e0a-f9aa-4ea0-8a7b-3b72de541041" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/myBlog_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/myBlog_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-04-07.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/blog-dev.log.2020-04-09.0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-03-20.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-03-21.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-03-22.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-03-24.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-03-25.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/blog-dev.log.2020-03-26.0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/myBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/BlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/BlogApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="blogs@47.240.116.3" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="blogs@47.240.116.3" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="blogs@47.240.116.3" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blogs: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="blogs@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="blogs@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="blogs@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blogs: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="myBlog" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -90,18 +41,16 @@
       </set>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/cn/mo/blog/web/admin/BlogController.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="C:\Users\moshu\.m2\repository" />
-        <option name="mavenHome" value="C:/apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../apache-maven-3.6.1" />
         <option name="userSettingsFile" value="C:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1ZNThhlxLDikI08XSjjlIPIqZXD" />
@@ -110,7 +59,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -129,7 +77,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -184,32 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MD5Utils" />
         <item itemvalue="Application.MarkdownUtils" />
+        <item itemvalue="Application.MD5Utils" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:blogs@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:blogs@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@24be2f06" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -264,6 +190,17 @@
       <workItem from="1586178352067" duration="17480000" />
       <workItem from="1586228392407" duration="5116000" />
       <workItem from="1586235313702" duration="3424000" />
+      <workItem from="1586241852330" duration="144000" />
+      <workItem from="1586242031685" duration="63000" />
+      <workItem from="1586217210653" duration="604000" />
+      <workItem from="1586267657852" duration="169000" />
+      <workItem from="1586411428193" duration="10351000" />
+      <workItem from="1586435677133" duration="3695000" />
+      <workItem from="1586769776391" duration="14000" />
+      <workItem from="1586906830286" duration="186000" />
+      <workItem from="1586912157217" duration="163000" />
+      <workItem from="1586912429791" duration="44000" />
+      <workItem from="1587900121988" duration="163000" />
     </task>
     <task id="LOCAL-00001" summary="types and login">
       <created>1585389069590</created>
@@ -405,11 +342,18 @@
       <option name="project" value="LOCAL" />
       <updated>1586191628085</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="部署的版本">
+      <created>1586241948312</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1586241948312</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -422,12 +366,12 @@
                   <option name="REGEX" value="true" />
                 </TextFilterSettings>
               </option>
-              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -446,13 +390,14 @@
     <MESSAGE value="页面主体内容渲染" />
     <MESSAGE value="完善_fragment的细节" />
     <MESSAGE value="完善细节" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善细节" />
+    <MESSAGE value="部署的版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="部署的版本" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="374" y="4" key="#Assign_Data_Sources" timestamp="1586233586142">
+    <state x="450" y="120" width="511" height="461" key="#Assign_Data_Sources" timestamp="1587900287512">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="374" y="4" key="#Assign_Data_Sources/0.0.1280.680@0.0.1280.680" timestamp="1586233586142" />
+    <state x="450" y="120" width="511" height="461" key="#Assign_Data_Sources/0.0.1280.680@0.0.1280.680" timestamp="1587900287512" />
     <state x="233" y="1" key="#Auto_Import" timestamp="1586089206959">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -461,10 +406,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="1" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1586159175912" />
-    <state x="194" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586233601372">
+    <state x="71" y="30" width="812" height="646" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587900174540">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="194" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586233601372" />
+    <state x="71" y="30" width="812" height="646" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1587900174540" />
     <state x="446" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1586228818661">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -477,10 +422,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="429" y="206" width="421" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1586087262613" />
-    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1586191626762">
+    <state x="260" y="0" key="CommitChangelistDialog2" timestamp="1586241946680">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586191626762" />
+    <state x="260" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586241946680" />
     <state x="93" y="93" width="1093" height="493" key="DiffContextDialog" timestamp="1585136993640">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -489,38 +434,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="412" y="143" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584689926760" />
-    <state width="1238" height="310" key="GridCell.Tab.0.bottom" timestamp="1586241895882">
+    <state width="1238" height="326" key="GridCell.Tab.0.bottom" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586241895882" />
-    <state width="1238" height="310" key="GridCell.Tab.0.center" timestamp="1586241895882">
+    <state width="1238" height="326" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.0.center" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586241895882" />
-    <state width="1238" height="310" key="GridCell.Tab.0.left" timestamp="1586241895881">
+    <state width="1238" height="326" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.0.left" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586241895881" />
-    <state width="1238" height="310" key="GridCell.Tab.0.right" timestamp="1586241895882">
+    <state width="1238" height="326" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.0.right" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586241895882" />
-    <state width="1238" height="310" key="GridCell.Tab.1.bottom" timestamp="1586238080345">
+    <state width="1238" height="326" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.1.bottom" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586238080345" />
-    <state width="1238" height="310" key="GridCell.Tab.1.center" timestamp="1586238080344">
+    <state width="1238" height="326" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.1.center" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1586238080344" />
-    <state width="1238" height="310" key="GridCell.Tab.1.left" timestamp="1586238080344">
+    <state width="1238" height="326" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.1.left" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1586238080344" />
-    <state width="1238" height="310" key="GridCell.Tab.1.right" timestamp="1586238080344">
+    <state width="1238" height="326" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
+    <state width="1238" height="326" key="GridCell.Tab.1.right" timestamp="1587900277141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1238" height="310" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586238080344" />
+    <state width="1238" height="326" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587900277141" />
     <state width="1238" height="204" key="GridCell.Tab.2.bottom" timestamp="1585756236645">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -537,14 +482,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1238" height="204" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1585756236644" />
-    <state x="221" y="86" key="IDE.errors.dialog" timestamp="1586241906998">
+    <state x="221" y="86" key="IDE.errors.dialog" timestamp="1586435693147">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="221" y="86" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1586241906998" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1586189401832">
+    <state x="221" y="86" key="IDE.errors.dialog/0.0.1280.680@0.0.1280.680" timestamp="1586435693147" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1586422572414">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586189401832" />
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586422572414" />
     <state width="530" height="477" key="SwitcherDM" timestamp="1585909031992">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -557,10 +502,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="487" y="261" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1585137099726" />
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1586191639903">
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2" timestamp="1586242074429">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586191639903" />
+    <state x="233" y="76" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586242074429" />
     <state x="350" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586178733759">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -577,10 +522,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="439" y="246" key="git4idea.ui.GitResetDialog/0.0.1280.680@0.0.1280.680" timestamp="1585137326356" />
-    <state x="6" y="47" key="new project wizard" timestamp="1585123508495">
+    <state x="6" y="47" key="new project wizard" timestamp="1586422524825">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="6" y="47" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1585123508495" />
+    <state x="6" y="47" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1586422524825" />
     <state x="302" y="155" key="run.anything.popup" timestamp="1585759023946">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
